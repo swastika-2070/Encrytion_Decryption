@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enryption</title>
+    <title>Enryption/Decryption App</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    
+    <div class="main">
+        <h1>Caesar Cipher Tool</h1>
+        <textarea id="message" placeholder="Enter your message"></textarea>
+        <input type="number" id="shift" placeholder="Shift key (e.g., 3)"/>
+        <select id="mode">
+            <option value="encrypt">Encrypt</option>
+            <option value="decrypt">Decrypt</option>
+        </select>
+        <button onclick="">
+            Run
+        </button>
+        <h3>Result:</h3>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
